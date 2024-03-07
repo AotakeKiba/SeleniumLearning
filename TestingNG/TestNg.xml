@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests">
+         
+  <listeners>
+  <listener class-name = "ListenerTest.ListenerTest"/>
+  </listeners>
+  
+  <test name="flipkart">
+	 <classes>
+	   <class name="suite1.Flipkart"/>
+	 </classes>
+   </test>
+   
+  <test name="Myntra">
+     <classes>
+       <class name="suite2.SnapDeal"/>
+     </classes>
+   </test>
+   
+   <test name="Regression">
+         <classes>
+         	<!-- Writing format: package_name.class_name -->
+             <class name="FirstTestNGPackage.SecondTestNGFile"/>
+             <class name="FirstTestNGPackage.FirstTestNGFile"/>
+          </classes>
+     </test> <!-- Test -->
+</suite>
+
+<!-- <suite name="Testing TestNG.xml">
+    
+</suite> Suite -->
+
